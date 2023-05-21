@@ -17,6 +17,11 @@ class EmployeeController extends Controller
     }
     public function store(Request $request)
     {
-      $Validator = Validator::make();
+      $Validator = Validator::make($request->all(),[
+        'name' => 'required',
+        'email' => 'required',
+        'address' => 'required',
+        'image' => 'required',
+      ]);
     }
 }
