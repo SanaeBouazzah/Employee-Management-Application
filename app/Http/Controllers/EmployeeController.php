@@ -10,8 +10,8 @@ class EmployeeController extends Controller
     {
       return view('employee.list');
     }
-    public function index()
+    public function CREATE()
     {
-      return view('employee.list');
+      return 'create';
     }
 }
