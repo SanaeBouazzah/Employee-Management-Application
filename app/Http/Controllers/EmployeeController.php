@@ -23,5 +23,8 @@ class EmployeeController extends Controller
         'address' => 'required',
         'image' => 'sometimes |image:gif,png,jpeg,jpg',
       ]);
+      if(){
+        
+      }
     }
 }
