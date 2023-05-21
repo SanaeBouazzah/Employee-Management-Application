@@ -27,6 +27,18 @@
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" placeholder="Enter your name..">
           </div>
+          <div class="mb-3">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email..">
+          </div>
+          <div class="mb-3">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name..">
+          </div>
+          <div class="mb-3">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name..">
+          </div>
         </form>
       </div>
     </div>
