@@ -14,8 +14,8 @@ class EmployeeController extends Controller
     {
       return view('employee.create');
     }
-    public function store()
+    public function store(Request $request)
     {
-      return view('employee.create');
+      $Validator = 
     }
 }
