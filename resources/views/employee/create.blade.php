@@ -23,7 +23,10 @@
     <div class="card border-0 shadow-lg my-4">
       <div class="card-body">
         <form action="">
-          
+          <div class="mb-3">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name..">
+          </div>
         </form>
       </div>
     </div>
