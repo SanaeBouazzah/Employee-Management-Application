@@ -17,32 +17,14 @@
     <div class="d-flex justify-content-between">
       <div class="h5">Employees</div>
       <div>
-        <a href="{{route('employee.index')}}" class="btn btn-primary">Back</a>
+        <a href="{{route('employees.index')}}" class="btn btn-primary">Back</a>
       </div>
     </div>
     <div class="card border-0 shadow-lg my-4">
       <div class="card-body">
-        <table class="table table-striped">
-            <tr>
-              <th>ID</th>
-              <th>Image</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Address</th>
-              <th>Action</th>
-            </tr>
-            <tr>
-              <th>ID</th>
-              <th>Image</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Address</th>
-              <td>
-                <a href="" class="btn btn-primary btn-sm">Edit</a>
-                <a href="" class="btn btn-danger btn-sm">Delete</a>
-              </td>
-            </tr>
-          </table>
+        <form action="">
+          
+        </form>
       </div>
     </div>
   </div>
