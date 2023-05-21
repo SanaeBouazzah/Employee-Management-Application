@@ -8,6 +8,10 @@ class EmployeeController extends Controller
 {
     public function index()
     {
-      return 'hello';
+      return view('employee.list');
+    }
+    public function index()
+    {
+      return view('employee.list');
     }
 }
