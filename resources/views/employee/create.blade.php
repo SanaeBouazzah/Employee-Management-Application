@@ -36,11 +36,10 @@
             <textarea type="text" name="address" id="address" placeholder="Enter your address.." class="form-control"></textarea>
           </div>
           <div class="mb-3">
-            <label for="image" class="form-control"></label>
             <input type="file" name="image" id="image" class="form-control">
           </div>
-          <div>
-            <button class="form-control">Save Employees</button>
+          <div class="my-4">
+            <button class="form-control btn btn-primary">Save Employees</button>
           </div>
         </form>
       </div>
