@@ -39,6 +39,9 @@
             <label for="image" class="form-control"></label>
             <input type="file" name="image" id="image" class="form-control">
           </div>
+          <div>
+            <button class="form-control">Save Employees</button>
+          </div>
         </form>
       </div>
     </div>
