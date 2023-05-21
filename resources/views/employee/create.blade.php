@@ -32,8 +32,8 @@
             <input type="text" name="email" id="email" placeholder="Enter your email..">
           </div>
           <div class="mb-3">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name..">
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" placeholder="Enter your address..">
           </div>
           <div class="mb-3">
             <label for="name">Name:</label>
