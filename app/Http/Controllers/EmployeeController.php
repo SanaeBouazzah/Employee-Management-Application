@@ -21,7 +21,7 @@ class EmployeeController extends Controller
         'name' => 'required',
         'email' => 'required',
         'address' => 'required',
-        'image' => 'required',
+        'image' => 'sometimes |image:gif,png,jpeg,jpg',
       ]);
     }
 }
