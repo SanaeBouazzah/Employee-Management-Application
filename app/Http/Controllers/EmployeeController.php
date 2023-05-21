@@ -10,7 +10,11 @@ class EmployeeController extends Controller
     {
       return view('employee.list');
     }
-    public function CREATE()
+    public function create()
+    {
+      return view('employee.create');
+    }
+    public function store()
     {
       return view('employee.create');
     }
