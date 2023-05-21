@@ -25,19 +25,19 @@
         <form action="">
           <div class="mb-3">
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name..">
+            <input type="text" name="name" id="name" placeholder="Enter your name.." class="form-control">
           </div>
           <div class="mb-3">
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" placeholder="Enter your email..">
+            <label for="email" class="form-control">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email.." class="form-control">
           </div>
           <div class="mb-3">
-            <label for="address">Address:</label>
+            <label for="address" class="form-control">Address:</label>
             <textarea type="text" name="address" id="address" placeholder="Enter your address.." class="form-control"></textarea>
           </div>
           <div class="mb-3">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name..">
+            <label for="image" class="form-control"></label>
+            <input type="text" name="image" id="image" placeholder="Enter your name.." class="form-control">
           </div>
         </form>
       </div>
