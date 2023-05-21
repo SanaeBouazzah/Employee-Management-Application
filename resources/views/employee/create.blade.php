@@ -33,7 +33,7 @@
           </div>
           <div class="mb-3">
             <label for="address">Address:</label>
-            <input type="text" name="address" id="address" placeholder="Enter your address..">
+            <textarea type="text" name="address" id="address" placeholder="Enter your address.." class="form-control"></textarea>
           </div>
           <div class="mb-3">
             <label for="name">Name:</label>
