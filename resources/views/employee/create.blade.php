@@ -46,8 +46,8 @@
             @enderror
           </div>
           <div class="mb-3">
-            <input type="image" name="image" id="image" class="form-control">
-            @error('name')
+            <input type="file" name="image" id="image" class="form-control">
+            @error('image')
             <p class="valid-feedback">{{$message}}</p>
             @enderror
           </div>
