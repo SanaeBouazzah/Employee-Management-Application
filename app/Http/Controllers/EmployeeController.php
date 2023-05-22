@@ -17,14 +17,17 @@ class EmployeeController extends Controller
     }
     public function store(Request $request)
     {
-      $Validator = Validator::make($request->all(),[
+      $validator = Validator::make($request->all(),[
         'name' => 'required',
         'email' => 'required',
         'address' => 'required',
         'image' => 'sometimes |image:gif,png,jpeg,jpg',
       ]);
-      if(){
-        
+      if($validator->passes()){
+        //save data
+      }else{
+        // return with errors
+        return redirect()->route('employees.create')->withErrors($validator);
       }
     }
 }
