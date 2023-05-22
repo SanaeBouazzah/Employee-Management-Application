@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Employee;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -25,6 +26,8 @@ class EmployeeController extends Controller
       ]);
       if($validator->passes()){
         //save data
+        $employee = new Employee();
+        $employee->name = $request->name;
       }else{
         // return with errors
         return redirect()->route('employees.create')->withErrors($validator)->withInput();
