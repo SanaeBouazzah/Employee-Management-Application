@@ -10,7 +10,7 @@ class EmployeeController extends Controller
 {
     public function index()
     {
-      $employees = Employee::orderBy('id', 'DESC')->get();
+      $employees = Employee::orderBy('id', 'ASC')->get();
 
       return view('employee.list', ['employees' => $employees]);
     }

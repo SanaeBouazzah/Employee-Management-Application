@@ -37,8 +37,8 @@
               <th>Action</th>
             </tr>
             @if ($employees->isnotEmpty())
-                @foreach ($employees as )
-                <tr>
+                @foreach ($employees as $employee)
+                <tr class="my-4">
                   <td>{{$employee->id}}</td>
                   <td>
                     @if ($employee->image != '' && file_exists(public_path().'/uploads/employees/'.$employee->image))
