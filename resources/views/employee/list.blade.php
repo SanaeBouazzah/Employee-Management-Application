@@ -21,7 +21,9 @@
       </div>
     </div>
     @if (Session::has('sucess'))
-        <div class="alert alert-success"></div>
+        <div class="alert alert-success">
+          {{Session::get('success')}}
+        </div>
     @endif
     <div class="card border-0 shadow-lg my-4">
       <div class="card-body">
