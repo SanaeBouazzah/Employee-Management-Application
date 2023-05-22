@@ -27,7 +27,7 @@ class EmployeeController extends Controller
         //save data
       }else{
         // return with errors
-        return redirect()->route('employees.create')->withErrors($validator);
+        return redirect()->route('employees.create')->withErrors($validator)->withInput();
       }
     }
 }
