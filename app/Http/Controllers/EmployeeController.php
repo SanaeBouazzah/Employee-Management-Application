@@ -32,6 +32,13 @@ class EmployeeController extends Controller
         $employee->address = $request->address;
         $employee->save();
 
+        //upload image
+        if($request->image){
+          $ext = $request->image->getClientOriginalExtension();
+          $newFileName = time().'.'.$ext;
+          $request->image->move(public_path().'/uploads/employees/', $newFileName);
+        }
+
         $request->session()->flash('success', 'Employee added successfuly!!');
         return redirect()->route('employees.index');
       }else{
