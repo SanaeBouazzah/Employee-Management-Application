@@ -27,7 +27,7 @@
           <div class="mb-3">
             <label for="name" class="mb-2">Name:</label>
             <input type="text" name="name" id="name" placeholder="Enter your name.." class="form-control"
-            @error('name') is-invalid @enderror value="{{old('name')}}">
+            @error('name') is-invalid @enderror value="{{old('name', $employee->name)}}">
             @error('name')
             <p class="text-danger">{{$message}}</p>
             @enderror
@@ -35,7 +35,7 @@
           <div class="mb-3">
             <label for="email" class="mb-2">Email:</label>
             <input type="text" name="email" id="email" placeholder="Enter your email.." class="form-control"
-            @error('email') is-invalid @enderror value="{{old('email')}}">
+            @error('email') is-invalid @enderror value="{{old('email', $employee->email)}}">
             @error('email')
             <p class="text-danger">{{$message}}</p>
             @enderror
@@ -43,7 +43,7 @@
           <div class="mb-3">
             <label class="mb-2" for="address">Address:</label>
             <textarea type="text" name="address" id="address" placeholder="Enter your address.." 
-            class="form-control"   @error('address') is-invalid @enderror value="{{old('address')}}"></textarea>
+            class="form-control"   @error('address') is-invalid @enderror value="{{old('address', $employee->address)}}"></textarea>
             @error('address')
             <p class="text-danger">{{$message}}</p>
             @enderror
