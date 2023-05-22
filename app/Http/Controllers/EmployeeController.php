@@ -53,6 +53,9 @@ class EmployeeController extends Controller
     public function edit($id)
     {
       $employee = Employee::find($id);
+      if(!$employee){
+        abort('404');
+      }
       return view('employee.edit');
     }
 }
