@@ -28,7 +28,7 @@
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" placeholder="Enter your name.." class="form-control">
             @error('name')
-            <p class="valid-feedback"></p>
+            <p class="valid-feedback">{{$message}}</p>
             @enderror
           </div>
           <div class="mb-3">
