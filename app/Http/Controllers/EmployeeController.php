@@ -37,6 +37,8 @@ class EmployeeController extends Controller
           $ext = $request->image->getClientOriginalExtension();
           $newFileName = time().'.'.$ext;
           $request->image->move(public_path().'/uploads/employees/', $newFileName);
+          $employee->image =  $newFileName;
+          $employee->save();
         }
 
         $request->session()->flash('success', 'Employee added successfuly!!');
