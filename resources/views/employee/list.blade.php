@@ -67,7 +67,7 @@
       </div>
     </div>
     <div>
-      {{}}
+      {{$employees->links()}}
     </div>
   </div>
 </body>
