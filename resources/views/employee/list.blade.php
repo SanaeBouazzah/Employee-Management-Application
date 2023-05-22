@@ -53,7 +53,7 @@
                   <td>{{$employee->email}}</td>
                   <td>{{$employee->address}}</td>
                   <td>
-                    <a href="{{route('employees.edit')}}" class="btn btn-primary btn-sm">Edit</a>
+                    <a href="{{route('employees.edit', $employee->name)}}" class="btn btn-primary btn-sm">Edit</a>
                     <a href="" class="btn btn-danger btn-sm">Delete</a>
                   </td>
                 </tr>
