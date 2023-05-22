@@ -66,7 +66,7 @@
           </table>
       </div>
     </div>
-    <div>
+    <div class="my-7">
       {{$employees->links()}}
     </div>
   </div>
