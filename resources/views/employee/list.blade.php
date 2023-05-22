@@ -17,7 +17,7 @@
     <div class="d-flex justify-content-between">
       <div class="h5">Employees</div>
       <div>
-        <a href="{{route('employees.create')}}" class="btn btn-primary">Create</a>
+        <a href="{{route('employees.create')}}" class="btn btn-primary px-5">Create</a>
       </div>
     </div>
     @if (Session::has('sucess'))

@@ -17,7 +17,7 @@
     <div class="d-flex justify-content-between">
       <div class="h5">Employees</div>
       <div>
-        <a href="{{route('employees.index')}}" class="btn btn-primary">Back</a>
+        <a href="{{route('employees.index')}}" class="btn btn-primary px-5">Back</a>
       </div>
     </div>
     <div class="card border-0 shadow-lg my-4">
