@@ -28,6 +28,9 @@ class EmployeeController extends Controller
         //save data
         $employee = new Employee();
         $employee->name = $request->name;
+        $employee->email = $request->email;
+        $employee->address = $request->address;
+        $employee->save();
       }else{
         // return with errors
         return redirect()->route('employees.create')->withErrors($validator)->withInput();
