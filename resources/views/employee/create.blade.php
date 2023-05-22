@@ -34,13 +34,22 @@
           <div class="mb-3">
             <label for="email" class="form-control">Email:</label>
             <input type="text" name="email" id="email" placeholder="Enter your email.." class="form-control">
+            @error('email')
+            <p class="valid-feedback">{{$message}}</p>
+            @enderror
           </div>
           <div class="mb-3">
             <label for="address" class="form-control">Address:</label>
             <textarea type="text" name="address" id="address" placeholder="Enter your address.." class="form-control"></textarea>
+            @error('address')
+            <p class="valid-feedback">{{$message}}</p>
+            @enderror
           </div>
           <div class="mb-3">
-            <input type="file" name="image" id="image" class="form-control">
+            <input type="image" name="image" id="image" class="form-control">
+            @error('name')
+            <p class="valid-feedback">{{$message}}</p>
+            @enderror
           </div>
           <div class="my-4">
             <button class="form-control btn btn-primary">Save Employees</button>
