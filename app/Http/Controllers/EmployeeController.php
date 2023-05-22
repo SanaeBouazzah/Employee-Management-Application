@@ -50,4 +50,8 @@ class EmployeeController extends Controller
         return redirect()->route('employees.create')->withErrors($validator)->withInput();
       }
     }
+    public function edit()
+    {
+      
+    }
 }
