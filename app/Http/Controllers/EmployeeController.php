@@ -31,6 +31,8 @@ class EmployeeController extends Controller
         $employee->email = $request->email;
         $employee->address = $request->address;
         $employee->save();
+
+        $request->session()->flash('success', 'Employee added successfuly!!');
       }else{
         // return with errors
         return redirect()->route('employees.create')->withErrors($validator)->withInput();
