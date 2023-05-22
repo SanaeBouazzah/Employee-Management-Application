@@ -15,7 +15,7 @@
 
   <div class="container py-5">
     <div class="d-flex justify-content-between">
-      <div class="h5">Editing Employee</div>
+      <div class="h5">Edit Employee</div>
       <div>
         <a href="{{route('employees.index')}}" class="btn btn-primary px-5">Back</a>
       </div>

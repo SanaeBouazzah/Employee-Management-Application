@@ -50,8 +50,9 @@ class EmployeeController extends Controller
         return redirect()->route('employees.create')->withErrors($validator)->withInput();
       }
     }
-    public function edit()
+    public function edit($id)
     {
+      $employee = Employee::find($id);
       return view('employee.edit');
     }
 }
