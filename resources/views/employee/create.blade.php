@@ -42,7 +42,8 @@
           </div>
           <div class="mb-3">
             <label class="mb-2" for="address">Address:</label>
-            <textarea type="text" name="address" id="address" placeholder="Enter your address.." class="form-control" value="{{old('address')}}"></textarea>
+            <textarea type="text" name="address" id="address" placeholder="Enter your address.." 
+            class="form-control"   @error('address') is-invalid @enderror value="{{old('address')}}"></textarea>
             @error('address')
             <p class="text-danger">{{$message}}</p>
             @enderror
