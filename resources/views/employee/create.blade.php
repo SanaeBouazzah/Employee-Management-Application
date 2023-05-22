@@ -9,7 +9,7 @@
 <body>
   <div class="bg-dark py-3">
     <div class="container">
-      <div class="h4 text-white">Simple CRUD Laravel</div>
+      <div class="h4 text-white">Application de Gestion des Employees</div>
     </div>
   </div>
 

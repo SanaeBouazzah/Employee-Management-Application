@@ -9,13 +9,13 @@
 <body>
   <div class="bg-dark py-3">
     <div class="container">
-      <div class="h4 text-white">Simple CRUD Laravel</div>
+      <div class="h4 text-white">Application de Gestion des Employees</div>
     </div>
   </div>
 
   <div class="container py-5">
     <div class="d-flex justify-content-between">
-      <div class="h5">Employees</div>
+      <div class="h5">Editing Employee</div>
       <div>
         <a href="{{route('employees.index')}}" class="btn btn-primary px-5">Back</a>
       </div>
