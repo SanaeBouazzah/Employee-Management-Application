@@ -10,7 +10,9 @@ class EmployeeController extends Controller
 {
     public function index()
     {
-      return view('employee.list');
+      $employees = Employee::orderBy('id', 'DESC')->get();
+
+      return view('employee.list', ['employees' => $employees]);
     }
     public function create()
     {
@@ -24,7 +26,7 @@ class EmployeeController extends Controller
         'address' => 'required',
         'image' => 'sometimes |image:gif,png,jpeg,jpg',
       ]);
-      if($validator->passes()){
+        if($validator->passes()){
         //save data
         $employee = new Employee();
         $employee->name = $request->name;
