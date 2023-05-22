@@ -50,6 +50,9 @@
           </div>
           <div class="mb-3">
             <input type="file" name="image" id="image" class="form-control   @error('name') is-invalid @enderror">
+            @error('image')
+            <p class="text-danger">{{$message}}</p>
+            @enderror
           </div>
           <div class="my-4">
             <button class="form-control btn btn-primary">Save Employees</button>
