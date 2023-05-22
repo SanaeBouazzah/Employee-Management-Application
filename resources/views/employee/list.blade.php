@@ -36,17 +36,32 @@
               <th>Address</th>
               <th>Action</th>
             </tr>
-            <tr>
-              <th>ID</th>
-              <th>Image</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Address</th>
-              <td>
-                <a href="" class="btn btn-primary btn-sm">Edit</a>
-                <a href="" class="btn btn-danger btn-sm">Delete</a>
-              </td>
-            </tr>
+            @if ($employees->isnotEmpty())
+                @foreach ($employees as )
+                <tr>
+                  <td>{{$employee->id}}</td>
+                  <td>
+                    @if ($employee->image != '' && file_exists(public_path().'/uploads/employees/'.$employee->image))
+                        <img src="{{url('uploads/employees/'.$employee->image)}}" alt=""
+                         width="50" height="50" class="rounded-circle">
+                    @else
+                        
+                    @endif
+                  </td>
+                  <td>{{$employee->name}}</td>
+                  <td>{{$employee->email}}</td>
+                  <td>{{$employee->address}}</td>
+                  <td>
+                    <a href="" class="btn btn-primary btn-sm">Edit</a>
+                    <a href="" class="btn btn-danger btn-sm">Delete</a>
+                  </td>
+                </tr>
+                @endforeach
+            @else
+                <tr>
+                  <td colspan="6">Record Not Found</td>
+                </tr>
+            @endif
           </table>
       </div>
     </div>
