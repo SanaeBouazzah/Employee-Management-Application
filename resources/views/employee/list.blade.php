@@ -38,14 +38,15 @@
             </tr>
             @if ($employees->isnotEmpty())
                 @foreach ($employees as $employee)
-                <tr class="my-4">
+                <tr valign="middle">
                   <td>{{$employee->id}}</td>
                   <td>
                     @if ($employee->image != '' && file_exists(public_path().'/uploads/employees/'.$employee->image))
                         <img src="{{url('uploads/employees/'.$employee->image)}}" alt=""
-                         width="50" height="50" class="rounded-circle">
+                         width="40" height="40" class="rounded-circle">
                     @else
-                        
+                         <img src="{{url('assets/images/f2.png')}}" alt=""
+                         width="40" height="40" class="rounded-circle">
                     @endif
                   </td>
                   <td>{{$employee->name}}</td>
