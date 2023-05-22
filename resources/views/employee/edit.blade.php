@@ -34,8 +34,8 @@
           </div>
           <div class="mb-3">
             <label for="email" class="mb-2">Email:</label>
-            <input type="text" name="email" id="email" placeholder="Enter your email.." class="form-control"
-            @error('email') is-invalid @enderror value="{{old('email', $employee->email)}}">
+            <input type="text" name="email" id="email" placeholder="Enter your email.." class="form-control
+            @error('email') is-invalid @enderror" value="{{old('email', $employee->email)}}">
             @error('email')
             <p class="text-danger">{{$message}}</p>
             @enderror
@@ -43,14 +43,22 @@
           <div class="mb-3">
             <label class="mb-2" for="address">Address:</label>
             <textarea type="text" name="address" id="address" placeholder="Enter your address.." 
-            class="form-control"   @error('address') is-invalid @enderror value="{{old('address', $employee->address)}}"></textarea>
+            class="form-control   @error('address') is-invalid @enderror" value="{{old('address', $employee->address)}}"></textarea>
             @error('address')
             <p class="text-danger">{{$message}}</p>
             @enderror
           </div>
           <div class="mb-3">
             <input type="file" name="image" id="image" class="form-control">
+            @if ($employee->image != '' && file_exists(public_path().'/uploads/employees/'.$employee->image))
+                      <img src="{{url('uploads/employees/'.$employee->image)}}" alt=""
+                     width="40" height="40" class="rounded-circle">
+            @else
+                     <img src="{{url('assets/images/f2.png')}}" alt=""
+                     width="40" height="40" class="rounded-circle">
+            @endif
           </div>
+
           <div class="my-4">
             <button class="form-control btn btn-primary">Save Employees</button>
           </div>
