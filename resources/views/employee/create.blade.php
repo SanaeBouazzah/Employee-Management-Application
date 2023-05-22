@@ -44,13 +44,13 @@
             <label class="mb-2" for="address">Address:</label>
             <textarea type="text" name="address" id="address" placeholder="Enter your address.." class="form-control"></textarea>
             @error('address')
-            <p class="invalid-feedback">{{$message}}</p>
+            <p class="valid-feedback">{{$message}}</p>
             @enderror
           </div>
           <div class="mb-4">
             <input type="file" name="image" id="image" class="form-control">
             @error('image')
-            <p class="invalid-feedback">{{$message}}</p>
+            <p class="laravel-CRUDvalid-feedback">{{$message}}</p>
             @enderror
           </div>
           <div class="my-4">
