@@ -20,7 +20,7 @@
         <a href="{{route('employees.create')}}" class="btn btn-primary px-5">Create</a>
       </div>
     </div>
-    @if (Session::has('sucess'))
+    @if (Session::has('success'))
         <div class="alert alert-success">
           {{Session::get('success')}}
         </div>
