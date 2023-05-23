@@ -87,7 +87,7 @@ class EmployeeController extends Controller
         return redirect()->route('employees.index');
       }else{
         // return with errors
-        return redirect()->route('employees.create')->withErrors($validator)->withInput();
+        return redirect()->route('employees.edit',$employee->id)->withErrors($validator)->withInput();
       }
     }
 }
