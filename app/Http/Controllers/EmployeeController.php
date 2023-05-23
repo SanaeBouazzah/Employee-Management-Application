@@ -53,7 +53,6 @@ class EmployeeController extends Controller
     public function edit($id)
     {
       $employee = Employee::findOrFail($id);
-      dd($employee);
       return view('employee.edit', ['employee'=>$employee]);
     }
 }
