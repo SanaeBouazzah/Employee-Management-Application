@@ -49,7 +49,7 @@
             @enderror
           </div>
           <div class="mb-3">
-            <input type="file" name="image" id="image" class="form-control @error('name') is-invalid @enderror">
+            <input type="file" name="image" id="image" class="form-control @error('image') is-invalid @enderror">
             @error('image')
             <p class="text-danger">{{$message}}</p>
             @enderror
