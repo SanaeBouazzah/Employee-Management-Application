@@ -49,7 +49,10 @@
             @enderror
           </div>
           <div class="mb-3">
-            <input type="file" name="image" id="image" class="form-control">
+            <input type="file" name="image" id="image" class="form-control @error('name') is-invalid @enderror">
+            @error('image')
+            <p class="text-danger">{{$message}}</p>
+            @enderror
             @if ($employee->image != '' && file_exists(public_path().'/uploads/employees/'.$employee->image))
                       <img src="{{url('uploads/employees/'.$employee->image)}}" alt=""
                      width="40" height="40" class="rounded-circle">
