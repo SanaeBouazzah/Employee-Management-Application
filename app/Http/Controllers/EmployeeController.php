@@ -90,8 +90,8 @@ class EmployeeController extends Controller
         return redirect()->route('employees.edit',$id)->withErrors($validator)->withInput();
       }
     }
-    public function delete()
+    public function delete($id, Request $request)
     {
-      
+
     }
 }
