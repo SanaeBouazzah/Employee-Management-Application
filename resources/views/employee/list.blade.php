@@ -54,7 +54,7 @@
                   <td>{{$employee->address}}</td>
                   <td>
                     <a href="{{route('employees.edit', $employee->id)}}" class="btn btn-primary btn-sm">Edit</a>
-                    <a href="" onclick="deleteEmployee()" class="btn btn-danger btn-sm">Delete</a>
+                    <a href="" onclick="deleteEmployee({{$employee}})" class="btn btn-danger btn-sm">Delete</a>
                   </td>
                 </tr>
                 @endforeach
