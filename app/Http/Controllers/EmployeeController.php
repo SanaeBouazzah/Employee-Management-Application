@@ -55,4 +55,8 @@ class EmployeeController extends Controller
       $employee = Employee::findOrFail($id);
       return view('employee.edit', ['employee'=>$employee]);
     }
+    public function update()
+    {
+      return view('employee.list');
+    }
 }
