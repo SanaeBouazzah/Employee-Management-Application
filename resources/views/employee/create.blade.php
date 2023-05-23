@@ -43,17 +43,18 @@
           <div class="mb-3">
             <label class="mb-2" for="address">Address:</label>
             <textarea type="text" name="address" id="address" placeholder="Enter your address.." 
-            class="form-control  @error('address') is-invalid @enderror" value="{{old('address')}}"></textarea>
+            class="form-control  @error('address') is-invalid @enderror" value="{{old('address')}}" value="{{old('address')}}"></textarea>
             @error('address')
             <p class="text-danger">{{$message}}</p>
             @enderror
           </div>
           <div class="mb-3">
-            <input type="file" name="image" id="image" class="form-control   @error('name') is-invalid @enderror">
+            <input type="file" name="image" id="image" class="form-control @error('name') is-invalid @enderror">
             @error('image')
             <p class="text-danger">{{$message}}</p>
             @enderror
           </div>
+
           <div class="my-4">
             <button class="form-control btn btn-primary">Save Employees</button>
           </div>
