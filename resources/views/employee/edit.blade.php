@@ -53,14 +53,16 @@
             @error('image')
             <p class="text-danger">{{$message}}</p>
             @enderror
-            @if ($employee->image != '' && file_exists(public_path().'/uploads/employees/'.$employee->image))
+            <div class="py-4">
+              @if ($employee->image != '' && file_exists(public_path().'/uploads/employees/'.$employee->image))
                       <img src="{{url('uploads/employees/'.$employee->image)}}" alt=""
                      width="100" height="100">
             @endif
+            </div>
           </div>
 
           <div class="my-4">
-            <button class="form-control btn btn-primary">Save Employees</button>
+            <button class="form-control btn btn-primary">Update Informations</button>
           </div>
         </form>
       </div>
