@@ -55,7 +55,7 @@
                   <td>
                     <a href="{{route('employees.edit', $employee->id)}}" class="btn btn-primary btn-sm">Edit</a>
                     <a href="" onclick="deleteEmployee({{$employee->id}})" class="btn btn-danger btn-sm">Delete</a>
-                    <form action=""></form>
+                    <form action="{{route('employees.delete')}}"></form>
                   </td>
                 </tr>
                 @endforeach
