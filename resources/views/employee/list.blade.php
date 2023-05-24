@@ -27,10 +27,9 @@
         </div>
      @endif
     </div>
-    <div class="card border-0 shadow-lg my-4">
-      <div class="card-body">
+    <div class="card border-0  shadow-lg my-5">
         <table class="table table-striped">
-            <tr>
+            <tr class="py-4">
               <th>ID</th>
               <th>Image</th>
               <th>Name</th>
@@ -71,7 +70,6 @@
                 </tr>
             @endif
           </table>
-      </div>
     </div>
     <div class="my-7">
       {{$employees->links()}}
