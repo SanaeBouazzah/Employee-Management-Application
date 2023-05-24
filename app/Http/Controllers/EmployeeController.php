@@ -81,8 +81,7 @@ class EmployeeController extends Controller
           File::delete(public_path().'/uploads/employees/'.$oldImage);
         }
 
-        $request->session()->flash('success', 'Employee added successfuly!!');
-        return redirect()->route('employees.index');
+        return redirect()->route('employees.index')->with('success', 'Employee added successfuly!!');
       }else{
         // return with errors
         return redirect()->route('employees.edit',$id)->withErrors($validator)->withInput();
