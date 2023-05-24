@@ -75,8 +75,8 @@
 
 <script>
   function deleteEmployee(id){
-    if(confirm()){
-      
+    if(confirm("Are you sure you want to delete ?!!")){
+
     }
   }
 </script>
