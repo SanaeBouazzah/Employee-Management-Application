@@ -57,6 +57,7 @@
                     <a href="" onclick="deleteEmployee({{$employee->id}})" class="btn btn-danger btn-sm">Delete</a>
                     <form action="{{route('employees.delete', $employee->id)}}" method="POST">
                       @csrf
+                      @method('delete')
                       
                     </form>
                   </td>
