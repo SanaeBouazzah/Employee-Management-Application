@@ -29,19 +29,19 @@
     </div>
     <div class="card border-0  shadow-lg my-5">
         <table class="table table-striped">
-            <tr class="py-4">
-              <th>ID</th>
-              <th>Image</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Address</th>
-              <th>Action</th>
+            <tr>
+              <th class="py-4">ID</th>
+              <th class="py-4">Image</th>
+              <th class="py-4">Name</th>
+              <th class="py-4">Email</th>
+              <th class="py-4">Address</th>
+              <th class="py-4">Action</th>
             </tr>
             @if ($employees->isnotEmpty())
                 @foreach ($employees as $employee)
                 <tr valign="middle">
-                  <td>{{$employee->id}}</td>
-                  <td>
+                  <td class="py-3">{{$employee->id}}</td>
+                  <td class="py-3">
                     @if ($employee->image != '' && file_exists(public_path().'/uploads/employees/'.$employee->image))
                         <img src="{{url('uploads/employees/'.$employee->image)}}" alt=""
                          width="40" height="40" class="rounded-circle">
@@ -50,10 +50,10 @@
                          width="40" height="40" class="rounded-circle">
                     @endif
                   </td>
-                  <td>{{$employee->name}}</td>
-                  <td>{{$employee->email}}</td>
-                  <td>{{$employee->address}}</td>
-                  <td>
+                  <td class="py-3">{{$employee->name}}</td>
+                  <td class="py-3">{{$employee->email}}</td>
+                  <td class="py-3">{{$employee->address}}</td>
+                  <td class="py-3">
                     <a href="{{route('employees.edit', $employee->id)}}" class="btn btn-primary btn-sm">Edit</a>
                     <a href="#" onclick="deleteEmployee({{$employee->id}})" class="btn btn-danger btn-sm">Delete</a>
                     <form id="employee-edit-action-{{$employee->id}}" action="{{route('employees.delete', $employee->id)}}" method="POST">
