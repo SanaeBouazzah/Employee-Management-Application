@@ -95,7 +95,7 @@ class EmployeeController extends Controller
       $employee = Employee::findOrFail($id);
       File::delete(public_path().'/uploads/employees/'.$employee->image);
       $employee->delete();
-      $request->session()->flash()
+      $request->session()->flash('success');
       return redirect()->route('employees.index');
     }
 }
