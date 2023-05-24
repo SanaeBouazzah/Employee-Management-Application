@@ -81,7 +81,7 @@
 <script>
   function deleteEmployee(id){
     if(confirm("Are you sure you want to delete ?!!")){
-
+      document.getElementById('employee-edit-action-'+id'')
     }
   }
 </script>
