@@ -75,7 +75,7 @@
 
 <script>
   function deleteEmployee(id){
-    if(){
+    if(confirm()){
       
     }
   }
