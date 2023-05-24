@@ -44,7 +44,7 @@ class EmployeeController extends Controller
           $employee->save();
         }
         $request->session()->flash('success', 'Employee added successfuly!!');
-        return redirect()->route('employees.index');
+        return redirect()->route('employees.index')->with('success', 'Employee added successfuly!!');
       }else{
         // return with errors
         return redirect()->route('employees.create')->withErrors($validator)->withInput();
