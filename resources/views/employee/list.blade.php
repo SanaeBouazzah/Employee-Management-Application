@@ -74,7 +74,9 @@
 </html>
 
 <script>
-  function deleteEmployee(){
-    
+  function deleteEmployee(id){
+    if(){
+      
+    }
   }
 </script>
