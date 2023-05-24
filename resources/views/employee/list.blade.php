@@ -28,19 +28,22 @@
      @endif
     </div>
     <div class="card border-0  shadow-lg my-5">
-        <table class="table table-striped">
+        <table class="table table-striped rounded">
+          <thead>
             <tr>
-              <th class="py-4">ID</th>
+              <th class="p-4">ID</th>
               <th class="py-4">Image</th>
               <th class="py-4">Name</th>
               <th class="py-4">Email</th>
               <th class="py-4">Address</th>
               <th class="py-4">Action</th>
             </tr>
+        </thead>  
+        <tbody>
             @if ($employees->isnotEmpty())
                 @foreach ($employees as $employee)
                 <tr valign="middle">
-                  <td class="py-3">{{$employee->id}}</td>
+                  <td class="p-4">{{$employee->id}}</td>
                   <td class="py-3">
                     @if ($employee->image != '' && file_exists(public_path().'/uploads/employees/'.$employee->image))
                         <img src="{{url('uploads/employees/'.$employee->image)}}" alt=""
@@ -69,6 +72,7 @@
                   <td colspan="6">Record Not Found</td>
                 </tr>
             @endif
+          </tbody>
           </table>
     </div>
     <div class="my-7">
