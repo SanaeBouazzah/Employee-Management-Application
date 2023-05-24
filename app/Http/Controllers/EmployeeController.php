@@ -43,7 +43,6 @@ class EmployeeController extends Controller
           $employee->image =  $newFileName;
           $employee->save();
         }
-
         $request->session()->flash('success', 'Employee added successfuly!!');
         return redirect()->route('employees.index');
       }else{
