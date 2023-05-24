@@ -72,3 +72,9 @@
   </div>
 </body>
 </html>
+
+<script>
+  function deleteEmployee(){
+    
+  }
+</script>
