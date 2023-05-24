@@ -92,6 +92,6 @@ class EmployeeController extends Controller
     }
     public function delete($id, Request $request)
     {
-
+      $employee
     }
 }
