@@ -93,7 +93,7 @@ class EmployeeController extends Controller
     public function delete($id, Request $request)
     {
       $employee = Employee::findOrFail($id);
-      File::delete(public_path().'/uploads/employees/'.$oldImage);
+      File::delete(public_path().'/uploads/employees/'.$employee->image);
       $employee->delete();
     }
 }
