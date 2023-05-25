@@ -29,8 +29,8 @@ class EmployeeController extends Controller
       ]);
         if($validator->passes()){
         //save data
+        Employee::create($request->post())->sava()
 
-        
         //upload image
         if($request->image){
           $ext = $request->image->getClientOriginalExtension();
