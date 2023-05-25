@@ -57,8 +57,8 @@
                   <td class="py-3">{{$employee->email}}</td>
                   <td class="py-3">{{$employee->address}}</td>
                   <td class="py-3">
-                    <a href="{{route('employees.edit', $employee->id)}}" class="btn btn-primary btn-sm">Edit</a>
-                    <a href="#" onclick="deleteEmployee({{$employee->id}})" class="btn btn-danger btn-sm">Delete</a>
+                    <a href="{{route('employees.edit', $employee->id)}}" class="btn btn-primary btn-sm px-3">Edit</a>
+                    <a href="#" onclick="deleteEmployee({{$employee->id}})" class="btn btn-danger btn-sm px-3">Delete</a>
                     <form id="employee-edit-action-{{$employee->id}}" action="{{route('employees.delete', $employee->id)}}" method="POST">
                       @csrf
                       @method('delete')
