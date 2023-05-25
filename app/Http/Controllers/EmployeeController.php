@@ -54,7 +54,7 @@ class EmployeeController extends Controller
       $employee = Employee::findOrFail($id);
       return view('employee.edit', ['employee'=>$employee]);
     }
-    public function update($id, Request $request)
+    public function update(Employee $employee, Request $request)
     {
       $validator = Validator::make($request->all(),[
         'name' => 'required',
