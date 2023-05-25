@@ -54,7 +54,7 @@ class EmployeeController extends Controller
       $employee = Employee::findOrFail($id);
       return view('employee.edit', ['employee'=>$employee]);
     }
-    public function update(Employee $employee, Request $request)
+    public function update($id, Request $request)
     {
       $validator = Validator::make($request->all(),[
         'name' => 'required',
@@ -64,11 +64,11 @@ class EmployeeController extends Controller
       ]);
         if($validator->passes()){
         //save data
-        // $employee =  Employee::find($id);
-        // $employee->name = $request->name;
-        // $employee->email = $request->email;
-        // $employee->address = $request->address;
-        // $employee->save();
+        $employee =  Employee::find($id);
+        $employee->name = $request->name;
+        $employee->email = $request->email;
+        $employee->address = $request->address;
+        $employee->save();
 
         //upload image
         if($request->image){
