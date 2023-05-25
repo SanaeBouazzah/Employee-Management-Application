@@ -29,7 +29,7 @@ class EmployeeController extends Controller
       ]);
         if($validator->passes()){
         //save data
-        Employee::create($request->post())->sava()
+        Employee::create($request->post())->save();
 
         //upload image
         if($request->image){
