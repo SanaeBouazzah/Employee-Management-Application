@@ -64,11 +64,11 @@ class EmployeeController extends Controller
       ]);
         if($validator->passes()){
         //save data
-        $employee =  Employee::find($id);
-        $employee->name = $request->name;
-        $employee->email = $request->email;
-        $employee->address = $request->address;
-        $employee->save();
+        // $employee =  Employee::find($id);
+        // $employee->name = $request->name;
+        // $employee->email = $request->email;
+        // $employee->address = $request->address;
+        // $employee->save();
 
         //upload image
         if($request->image){
