@@ -29,8 +29,8 @@ class EmployeeController extends Controller
       ]);
         if($validator->passes()){
         //save data
-        $employee = new Employee();
-        $employee = fill($request->post())->save();
+
+        
         //upload image
         if($request->image){
           $ext = $request->image->getClientOriginalExtension();
