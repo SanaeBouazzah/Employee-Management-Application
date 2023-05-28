@@ -27,7 +27,7 @@
         </div>
      @endif
     </div>
-    <div class="card border-0  shadow-lg my-5">
+    <div class="card border-0  shadow-lg my-3">
         <table class="table table-striped rounded">
           <thead>
             <tr>
